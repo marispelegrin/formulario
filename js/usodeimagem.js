@@ -61,7 +61,7 @@ const contratoUsoDeImagemABI = [
 var contratoUsoDeImagem = web3.eth.contract(contratoUsoDeImagemABI).at("0x9d00df94db52803bf0fcdb248dd4db3bb25f0296");
 
 function obtemNomeEmpresa() {
-    contratoUsoDeImagem.nomeEmpresa({from: contaUsuario, gas: 3000000, value: 0}, function (err, resultado) {
+    contratoUsoDeImagem.nomeEmpresa({from: contaUsuario, gas: 3000000, value: 0}, function (err, protocolo) {
         if (err)    {
             console.log("Erro");
             console.error(err);
@@ -86,7 +86,7 @@ function registrarNomeEmpresa() {
         } else {
             console.log("Resultado");
             console.log(resultado);
-            statusTransacao.innerHTML = "Transação enviada ao Blockchain Ethereum. Faça a monitoração pelo hash: " + resultado;
+            statusTransacao.innerHTML = "Transação enviada ao Blockchain Ethereum. Faça a monitoração pelo protocolo: " + resultado;
         }
     });
 }
