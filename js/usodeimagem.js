@@ -68,7 +68,7 @@ function obtemNomeEmpresa() {
         } else {
             console.log("Resultado");
             let objStatus = document.getElementById("spanNomeEmpresa");
-            console.log(resultado);
+            console.log(protocolo);
             objStatus.innerText = protocolo;
         }
     });
