@@ -90,6 +90,7 @@ function registrarNomeEmpresa() {
         }
     });
 }
+
 function registrarNomeAgente() {
 	var statusTransacao = document.getElementById("statusTransacaoNomeAgente");
 	var nomeAgente = document.formNomeAgente.campoNomeAgente.value;
